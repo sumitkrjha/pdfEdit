@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Scroll bar */
+*::-webkit-scrollbar {
+  width: 6px; /* make the scrollbar a little thinner */
+  background-color: white; /* set the scrollbar color */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #151c46; /* set the scrollbar thumb color */
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent; /* set the scrollbar track color */
+}
