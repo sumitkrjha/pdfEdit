@@ -38,7 +38,7 @@ const Testimonial = () => {
     <>
       <h1
         id="testimonyTitle"
-        className="text-5xl text-deepblue font-bold text-center"
+        className="text-4xl text-deepblue font-bold text-center"
       >
         Testimonials
       </h1>
