@@ -9,6 +9,7 @@ export default {
       },
       boxShadow: {
         box: "8px 8px 0px 0px #151C46",
+        whiteBox: "8px 8px 0px 0px #FFFFFF",
       },
     },
   },

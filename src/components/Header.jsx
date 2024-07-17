@@ -32,15 +32,19 @@ const Header = () => {
               <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
                 Home
               </li>
-              <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
-                Tool
-              </li>
+              <a href="#featureContainer">
+                <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
+                  Tool
+                </li>
+              </a>
               <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
                 About
               </li>
-              <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
-                Contact
-              </li>
+              <a href="#footerContainer">
+                <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
+                  Contact
+                </li>
+              </a>
             </ul>
           </div>
           <div
