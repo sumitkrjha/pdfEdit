@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../assets/hero.png";
+import toast from "react-hot-toast";
 const HeroSection = () => {
   return (
     <div id="heroContainer" className="static h-auto w-full">
@@ -24,10 +25,17 @@ const HeroSection = () => {
             id="buttons"
             className="w-full h-auto p-2 flex flex-col items-center min-[400px]:flex-row gap-5 "
           >
-            <button className="p-2 h-14 w-44 text-2xl font-medium bg-deepblue text-white rounded-xl flex items-center justify-center hover:bg-lightblue ">
-              Try for Free
-            </button>
-            <button className="p-2 h-14 w-44 text-2xl font-medium bg-lightblue text-white rounded-xl flex items-center justify-center hover:bg-deepblue ">
+            <a href="#featureContainer">
+              <button className="p-2 h-14 w-44 text-2xl font-medium bg-deepblue text-white rounded-xl flex items-center justify-center hover:bg-lightblue ">
+                Try for Free
+              </button>
+            </a>
+            <button
+              className="p-2 h-14 w-44 text-2xl font-medium bg-lightblue text-white rounded-xl flex items-center justify-center hover:bg-deepblue "
+              onClick={() => {
+                toast.success("This will take to the Login page");
+              }}
+            >
               Get Started
             </button>
           </div>

@@ -30,7 +30,24 @@ const Footer = () => {
       svg: gmail,
     },
   ];
-  const page = ["Home", "Tool", "About", "Contact"];
+  const page = [
+    {
+      name: "Home",
+      link: "#",
+    },
+    {
+      name: "About",
+      link: "#heroWrapper",
+    },
+    {
+      name: "Tool",
+      link: "#featureContainer",
+    },
+    {
+      name: "Contact",
+      link: "#footerContainer",
+    },
+  ];
   return (
     <>
       <div
@@ -48,7 +65,12 @@ const Footer = () => {
             Reach out to us and let our PDF wizards transform your document
             experience!
           </p>
-          <button className="h-14 w-4/5 lg:w-40 border-2 border-deepblue text-deepblue rounded-2xl font-bold hover:shadow-box hover:scale-105">
+          <button
+            className="h-14 w-4/5 lg:w-40 border-2 border-deepblue text-deepblue rounded-2xl font-bold hover:shadow-box hover:scale-105"
+            onClick={() => {
+              toast.success("This will take to the dedicated Contact page");
+            }}
+          >
             Let's Connect
           </button>
         </div>
@@ -62,12 +84,14 @@ const Footer = () => {
             className="flex flex-wrap items-center justify-center gap-3 mb-6"
           >
             {page.map((items, index) => (
-              <li
-                key={index}
-                className="text-xl font-semibold text-deepblue hover:text-lightblue cursor-pointer"
-              >
-                {items}
-              </li>
+              <a href={items.link}>
+                <li
+                  key={index}
+                  className="text-xl font-semibold text-deepblue hover:text-lightblue cursor-pointer"
+                >
+                  {items.name}
+                </li>
+              </a>
             ))}
           </ul>
           <div

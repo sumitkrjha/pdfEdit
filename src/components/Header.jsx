@@ -29,17 +29,21 @@ const Header = () => {
             className="hidden lg:flex h-16 p-2 pl-10 items-center"
           >
             <ul className="h-14 flex items-center justify-center gap-8">
-              <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
-                Home
-              </li>
+              <a href="#">
+                <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
+                  Home
+                </li>
+              </a>
               <a href="#featureContainer">
                 <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
                   Tool
                 </li>
               </a>
-              <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
-                About
-              </li>
+              <a href="#heroWrapper">
+                <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
+                  About
+                </li>
+              </a>
               <a href="#footerContainer">
                 <li className="text-lg font-semibold cursor-pointer hover:text-lightblue">
                   Contact
@@ -56,7 +60,12 @@ const Header = () => {
                 Try for Free
               </button>
             </a>
-            <button className="p-2 h-auto w-28 rounded-xl flex items-center justify-center hover:bg-lightblue hover:text-white font-medium">
+            <button
+              className="p-2 h-auto w-28 rounded-xl flex items-center justify-center hover:bg-lightblue hover:text-white font-medium"
+              onClick={() => {
+                toast.success("It will take to the Login Page");
+              }}
+            >
               Get Started
             </button>
           </div>
